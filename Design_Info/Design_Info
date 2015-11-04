@@ -1,0 +1,22 @@
+: Poker Best Hand :
+
+Principles/Concepts used in The Application :
+1. Design pattern : Factory (For generating the CardDeck and All Poker hand rule objects)
+2. IO : For file reading
+3. Reflection : Used to load the Rule Runtime for validating the best poker hand
+4. Exception : Custom Exceptions for handling the error conditions
+5. Sort utility : To sort the cards provided as well sorting the properties
+
+
+Flow of the Application :
+1. Application read the Input from the File (read the card from the file)
+2. Mean while Generate the CardDeck.
+3. Will Validate the Cards provided from the file by using the CardDeck
+4. read the properties from the property file (Property file contains the all rule and its priority)
+5. On the basis of Properties , Load the rules at Runtime (using reflection)
+6. If the rule satisfies , it will return the output as rule name else will check next rule and so on.
+
+
+
+
+
